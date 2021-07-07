@@ -1,0 +1,27 @@
+@media only screen and (min-width: 540px) and (max-width: 1025px) {
+    body {
+        background-image: url(../images/tablet/image-host.jpg);
+        background-position: right 100%;
+        background-size: contain;
+    }
+    .pod {
+        padding: 10px 0;
+        margin-left: 0px;
+        margin-bottom: 60px;
+        padding-left: 25px;
+    }
+
+    section.information_container {
+        margin-left: 0px;
+        min-width: 0px;
+    }
+
+    section.brans {
+        margin-left: 0px;
+        min-width: 0px;    
+    }
+
+    section.information_container::after {
+        background-image: none;
+    }
+}
