@@ -2,11 +2,10 @@ body {
     padding: 0;
     background-color: #121725;
     margin: 0;
-    background-image: url(../images/desktop/image-host.jpg);
-    background-repeat: no-repeat;
-    background-position: right 60%;
     font-family: 'Chivo', sans-serif; 
+    position: relative;
 }
+
 
 * {
     margin-block-start: 0px;
@@ -21,12 +20,23 @@ p {
     padding: 10px;
 }
 
+.background_image {
+    content: "";
+    background-image: url(../images/desktop/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100em;
+    height: 50em;
+    margin-top: -5em;
+    position: absolute;
+    margin-left: 40em;
+}
 section.information_container::after {
     content: "";
     background-repeat: no-repeat;
-    position: fixed;
-    top: 78%;
-    left: 85%;
+    position: absolute;
+    top: 40em;
+    left: 85em;
     width: 100%;
     height: 100%;
     background-image: url(../images/desktop/bg-pattern-dots.svg);
@@ -36,10 +46,9 @@ section.information_container::after {
 section.information_container {
     background-color: #121725;
     color: #979797;
-    min-height: 65vh;
-    margin-left: 160px;
-    min-width: 814px;
-    max-width: 65%;
+    min-height: 65em;
+    margin-left: 10em;
+    max-width: 80em;
     position: relative;
 }
 
@@ -102,12 +111,11 @@ input.text_box:hover {
 }
 
 section.brans {
-    margin-left: 160px;
-    min-width: 814px;
-    max-width: 65%;
+    margin-left: 10em;
+    max-width: 70em;
     display: flex;
     justify-content: space-between;
-    margin-top: -10px;
+    margin-top: -10em;
 }
 
 section.brans img {
@@ -187,6 +195,7 @@ section.brans img {
         background-position: 100%;
         background-image: url(../images/desktop/image-host.jpg);
         background-size: cover;
+        
     }
 
     .pod {
