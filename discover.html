@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
-
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header class="pod">
@@ -39,6 +38,16 @@
         <img src="./static/images/desktop/google-podcasts.svg">
         <img src="./static/images/desktop/pocket-casts.svg">
     </div>
+    <script id="card-template" type="text/x-handlebars-template">
+        <div class="card">
+        <div class="card-image" style="background-image: url('{{img}}');background-size: cover;background-position: center;">
+            
+        </div>
+        <p class='podcast_title'>{{name}}</p>
+        <p>{{genre}}</p>
+        <input type="submit" id="listen" class="button_rules" value="Listen">
+        </div>
+    </script>
     <script type="text/javascript" src="./static/javascript/search.js"></script>
 </body>
 </html>
