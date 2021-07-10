@@ -10,7 +10,6 @@ body {
 * {
     margin-block-start: 0px;
     margin-block-end: 0px;
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -31,8 +30,8 @@ p {
 
 .background_image {
     transform: translate(40em, -8em);
-    height: 90%;
     width: 50%;
+    height: 80%;
     position: absolute;
     background-color: green;
 }
@@ -53,7 +52,7 @@ section.information_container {
     color: #979797;
     height: 80%;
     margin-left: 10em;
-    max-width: 60%;
+    width: 60%;
     position: relative;
 }
 
