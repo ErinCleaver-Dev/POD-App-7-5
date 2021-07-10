@@ -28,13 +28,19 @@ p {
     padding: 10px;
 }
 
-.background_image {
+.image-container {
     transform: translate(40em, -8em);
     width: 50%;
     height: 80%;
     position: absolute;
     background-color: green;
 }
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
 section.information_container::after {
     content: "";
     background-repeat: no-repeat;
@@ -73,7 +79,7 @@ input.text_box {
     color: white;
     border: none;
     border-radius: 25px;
-    width: 70%;
+    max-width: 57%;
     margin-left: 10px;
     padding: 15px;
 }
@@ -161,10 +167,16 @@ section.brans img {
     padding: 5px;
 }
 @media only screen and (min-width: 540px) and (max-width: 1025px) {
+
     body {
-        background-image: url(../images/tablet/image-host.jpg);
-        background-position: right 100%;
-        background-size: contain;
+        overflow: hidden;
+    }
+    .image-container {
+        transform: translate(0, -4em);
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        background-color: green;
     }
     .pod {
         padding: 10px 0;
@@ -194,14 +206,21 @@ section.brans img {
     }
 }
 @media only screen and (max-width: 480px) {
-
-    body {
-        background-position: 100%;
-        background-image: url(../images/desktop/image-host.jpg);
-        background-size: cover;
-        
+    .image-container {
+        background-image: url(../images/mobile/image-host.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: green;
     }
 
+    .image-container img {
+        width: 0;
+        height: 0;
+    }
     .pod {
         padding: 10px 0;
 
